@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_brief"
+        android:text="这是公司层级的Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/bt_access"
+        android:layout_below="@+id/tv_brief"
+        android:text="进入"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.rhtop.taskmanager.ui.widget.CircleTextView
+        android:id="@+id/tv_circle"
+        app:textContent="周琦"
+        android:layout_below="@+id/bt_access"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

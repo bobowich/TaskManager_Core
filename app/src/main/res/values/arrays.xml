@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--定义字符串数组资源-->
+
+    <!--电话号码前缀-->
+    <string-array name="phone_prefix">
+        <item>+86</item>
+        <item>+01</item>
+        <item>+54</item>
+    </string-array>
+</resources>

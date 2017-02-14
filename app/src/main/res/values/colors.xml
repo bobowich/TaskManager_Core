@@ -3,4 +3,23 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--App 整体颜色风格-->
+    <!---->
+    <!--主色-->
+    <color name="main_color">#17a4e2</color>
+    <!--辅助色-->
+    <color name="sub_color">#d1ecfe</color>
+    <!--背景色-->
+    <color name="bg_color">#f2f2f2</color>
+    <!--布局背景颜色-->
+    <color name="layout_bg_color">#ffffff</color>
+    <!--两种描边色调-->
+    <color name="deep_stroke_color">#aaaaaa</color>
+    <color name="shallow_stroke_color">#e9e9e9</color>
+    <!--三种字体颜色-->
+    <color name="dark_text_color">#303030</color>
+    <color name="silver_text_color">#cccccc</color>
+    <color name="white_text_color">#ffffff</color>
+    <color name="light_blue_text_color">#d1ecfe</color>
 </resources>

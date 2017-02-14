@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--CircleTextView的相关属性设置-->
+    <!--圆形的颜色-->
+    <attr name="circleColor" format="color"/>
+    <!--文字内容-->
+    <attr name="textContent" format="string"/>
+    <!--字体的颜色-->
+    <attr name="textColor" format="color"/>
+    <!--文字的大小-->
+    <attr name="textSize" format="dimension"/>
+    <!--圆:字体 大小之间的比率关系-->
+    <attr name="circleTextRatio" format="float"/>
+
+    <declare-styleable name="CircleTextView">
+        <attr name="circleColor"/>
+        <attr name="textContent"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+        <attr name="circleTextRatio"/>
+    </declare-styleable>
+
+    <!--TitleBarLayout的属性设置-->
+    <!--标题字体的大小-->
+    <attr name="title_size" format="dimension"/>
+    <!--右侧功能按钮的字体大小-->
+    <attr name="func_size" format="dimension"/>
+    <!--字体的颜色-->
+    <attr name="text_color" format="color"/>
+    <!--标题文字内容-->
+    <attr name="title_text_string" format="string"/>
+    <!--功能文字内容-->
+    <attr name="func_text_string" format="string"/>
+    <!--是否显示后退键-->
+    <attr name="show_back_arrow" format="boolean"/>
+    <!--是否显示功能按钮-->
+    <attr name="show_func_text" format="boolean"/>
+    <!--布局背景颜色-->
+    <attr name="bg_color" format="color"/>
+
+    <declare-styleable name="TitleBarLayout">
+        <attr name="title_size"/>
+        <attr name="func_size"/>
+        <attr name="text_color"/>
+        <attr name="title_text_string"/>
+        <attr name="func_text_string"/>
+        <attr name="show_back_arrow"/>
+        <attr name="show_func_text"/>
+        <attr name="bg_color"/>
+    </declare-styleable>
+</resources>

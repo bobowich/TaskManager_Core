@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">TaskManager_Core</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_login">Sign in</string>
+    <string name="app_name">任务管理</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="password">密码</string>
+    <string name="title_activity_log">Sign in</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -17,4 +16,16 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="input_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="home_page">首页</string>
+    <string name="new_task">新任务</string>
+    <string name="task_classify">任务分类</string>
+    <string name="task_started">已发起</string>
+    <string name="task_focused">已关注</string>
+    <string name="task_responsible">已负责</string>
+    <string name="task_completed">已完成</string>
+    <string name="task_overdue">已逾期</string>
+    <string name="all_tasks">所有任务</string>
+
 </resources>

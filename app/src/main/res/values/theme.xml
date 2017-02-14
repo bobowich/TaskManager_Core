@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--定义App全局风格的基本基调，如TitleBar是否显示，界面背景颜色等等-->
+        <item name="android:background">@color/bg_color</item>
+        <!--<item name="android:windowNoTitle">true</item>-->
+    </style>
+
+    <style name="MyAppTheme" parent="BaseAppTheme">
+        <!--将界面主要的控件风格包括进来-->
+        <item name="android:textViewStyle">@style/TextViewTheme</item>
+    </style>
+
+
+    <style name="TextViewTheme" parent="@android:style/Widget.TextView">
+        <!--界面主要TextView的style-->
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/dark_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

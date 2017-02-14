@@ -8,7 +8,6 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="rhtop.com.taskmanager_core.ui.activity.CommentActivity">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
 </RelativeLayout>
