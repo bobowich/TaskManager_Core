@@ -11,7 +11,7 @@ import com.rhtop.taskmanager.R;
 
 
 //总览Fragment，可以搜索查看所有单人或多人的已完成任务的信息
-public class PandectFragment extends Fragment {
+public class OverviewFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -22,7 +22,7 @@ public class PandectFragment extends Fragment {
     private String mParam2;
 
 
-    public PandectFragment() {
+    public OverviewFragment() {
         // Required empty public constructor
     }
 
@@ -32,11 +32,11 @@ public class PandectFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment PandectFragment.
+     * @return A new instance of fragment OverviewFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static PandectFragment newInstance(String param1, String param2) {
-        PandectFragment fragment = new PandectFragment();
+    public static OverviewFragment newInstance(String param1, String param2) {
+        OverviewFragment fragment = new OverviewFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -57,7 +57,7 @@ public class PandectFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pandect, container, false);
+        return inflater.inflate(R.layout.fragment_overview, container, false);
     }
 
 

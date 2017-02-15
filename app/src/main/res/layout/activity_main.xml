@@ -9,7 +9,7 @@
     android:orientation="vertical">
     <com.rhtop.taskmanager.ui.widget.TitleBarLayout
         android:id="@+id/title_bar"
-        app:show_back_arrow="false"
+        app:show_back_arrow="true"
         app:title_text_string="@string/home_page"
         app:func_text_string="@string/new_task"
         android:layout_width="match_parent"

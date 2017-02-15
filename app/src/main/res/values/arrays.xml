@@ -8,4 +8,21 @@
         <item>+01</item>
         <item>+54</item>
     </string-array>
+    
+    <!--任务类别-->
+    <string-array name="task_category">
+        <item>任务发起</item>
+        <item>任务关注</item>
+        <item>任务负责</item>
+        <item>任务完成</item>
+        <item>任务逾期</item>
+    </string-array>
+    
+    <!--任务排序方式-->
+    <string-array name="task_sort_mode">
+        <item>截止时间降序</item>
+        <item>截止时间升序</item>
+        <item>开始时间降序</item>
+        <item>开始时间升序</item>
+    </string-array>
 </resources>

@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.rhtop.taskmanager.R;
+import com.rhtop.taskmanager.common.utils.LogUtils;
 
 /**
  * Created by bobowich
@@ -105,6 +106,10 @@ public class TitleBarLayout extends FrameLayout implements View.OnClickListener 
 
     }
 
+    public void setTitle(String title){
+        tvTitle.setText(title);
+    }
+
     private void initView() {
         inflater = LayoutInflater.from(mContext);
         View view = inflater.inflate(R.layout.layout_title_bar, this);
@@ -122,10 +127,11 @@ public class TitleBarLayout extends FrameLayout implements View.OnClickListener 
 
         tvFunc = (TextView) view.findViewById(R.id.tv_func);
         if (isShowFuncText) {
+            LogUtils.d("TitleBarLayout--initView: isShowFuncText");
             tvFunc.setText(funcText == null ? DEFAULT_FUNC_TEXT : funcText);
             tvFunc.setTextSize(funcTextSize);
             tvFunc.setTextColor(textColor);
-            setOnClickListener(this);
+            tvFunc.setOnClickListener(this);
         } else {
             tvFunc.setVisibility(GONE);
         }
@@ -141,11 +147,13 @@ public class TitleBarLayout extends FrameLayout implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.iv_back:
+                LogUtils.d("TitleBarLayout--onClick: ");
                 if (mListener != null) {
                     mListener.onBackClick();
                 }
                 break;
             case R.id.tv_func:
+                LogUtils.d("TitleBarLayout--onClick: ");
                 if (mListener != null) {
                     mListener.onFuncClick();
                 }

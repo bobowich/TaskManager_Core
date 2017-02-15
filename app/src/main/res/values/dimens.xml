@@ -16,5 +16,6 @@
     <!--界面的主要边距，margin，padding等等-->
     <dimen name="activity_left_right_padding">30px</dimen>
     <dimen name="login_corners_radius">6dp</dimen>
-    <dimen name="task_state_iv_size">40dp</dimen>
+    <dimen name="task_state_iv_size">20dp</dimen>
+    <dimen name="divider_line_width">1px</dimen>
 </resources>

@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/bg_color"
               android:orientation="vertical"
              android:layout_width="match_parent"
              android:layout_height="match_parent">
@@ -16,109 +17,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </RelativeLayout>
-
-    <LinearLayout
-        android:background="@color/layout_bg_color"
-        android:orientation="horizontal"
+    <GridView
+        android:id="@+id/gv_task_category"
+        android:numColumns="5"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:id="@+id/rl_task_started"
-            android:gravity="center_horizontal"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/iv_task_started"
-                android:src="@drawable/task_started_2x"
-                android:layout_width="@dimen/task_state_iv_size"
-                android:layout_height="@dimen/task_state_iv_size"/>
-            <TextView
-                android:id="@+id/tv_task_started"
-                android:text="@string/task_started"
-                android:layout_below="@+id/iv_task_started"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_task_focused"
-            android:gravity="center_horizontal"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/iv_task_focused"
-                android:src="@drawable/task_focused_2x"
-                android:layout_width="@dimen/task_state_iv_size"
-                android:layout_height="@dimen/task_state_iv_size"/>
-            <TextView
-                android:id="@+id/tv_task_focused"
-                android:text="@string/task_focused"
-                android:layout_below="@+id/iv_task_focused"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_task_responsible"
-            android:gravity="center_horizontal"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/iv_task_responsible"
-                android:src="@drawable/task_responsible_2x"
-                android:layout_width="@dimen/task_state_iv_size"
-                android:layout_height="@dimen/task_state_iv_size"/>
-            <TextView
-                android:id="@+id/tv_task_responsible"
-                android:text="@string/task_responsible"
-                android:layout_below="@+id/iv_task_responsible"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_task_completed"
-            android:gravity="center_horizontal"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/iv_task_completed"
-                android:src="@drawable/task_completed_2x"
-                android:layout_width="@dimen/task_state_iv_size"
-                android:layout_height="@dimen/task_state_iv_size"/>
-            <TextView
-                android:id="@+id/tv_task_completed"
-                android:text="@string/task_completed"
-                android:layout_below="@+id/iv_task_completed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_task_overdue"
-            android:gravity="center_horizontal"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/iv_task_overdue"
-                android:src="@drawable/task_overdue_2x"
-                android:layout_width="@dimen/task_state_iv_size"
-                android:layout_height="@dimen/task_state_iv_size"/>
-            <TextView
-                android:id="@+id/tv_task_overdue"
-                android:text="@string/task_overdue"
-                android:layout_below="@+id/iv_task_overdue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-    </LinearLayout>
+    </GridView>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -130,6 +37,54 @@
             android:text="@string/all_tasks"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_task_start_time"
+                android:text="@string/task_start_time"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_task_end_time"
+                android:text="@string/task_end_time"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_task_creator"
+                android:text="@string/task_creator"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_task_content"
+                android:text="@string/task_content"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_task_state"
+                android:text="@string/task_state"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
     </RelativeLayout>
 
 </LinearLayout>

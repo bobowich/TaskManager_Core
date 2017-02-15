@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_task_category"
+            android:src="@drawable/task_started_2x"
+            android:layout_width="@dimen/task_state_iv_size"
+            android:layout_height="@dimen/task_state_iv_size"/>
+        <TextView
+            android:id="@+id/tv_task_category"
+            android:text="@string/task_started"
+            android:layout_below="@+id/iv_task_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

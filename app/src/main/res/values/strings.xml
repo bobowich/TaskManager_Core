@@ -4,18 +4,6 @@
     <string name="password">密码</string>
     <string name="title_activity_log">Sign in</string>
 
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
     <string name="input_password">请输入密码</string>
     <string name="login">登录</string>
     <string name="home_page">首页</string>
@@ -27,5 +15,20 @@
     <string name="task_completed">已完成</string>
     <string name="task_overdue">已逾期</string>
     <string name="all_tasks">所有任务</string>
+    <string name="task_start_time">开始时间</string>
+    <string name="task_end_time">结束时间</string>
+    <string name="task_creator">创建人</string>
+    <string name="task_content">任务内容</string>
+    <string name="task_state">状态</string>
+    <string name="person_in_charger">负责人</string>
+    <string name="task_total_completed">总完成</string>
+    <string name="task_completed_on_time">正常完成</string>
+    <string name="task_completed_overdue">逾期完成</string>
+    <string name="task_progress">进度</string>
+    <string name="feedback">问题反馈</string>
+    <string name="user_guide">使用帮助</string>
+    <string name="settings">设置</string>
+    <string name="task_list">列表</string>
+    <string name="choose_contact">选择联系人</string>
 
 </resources>
